@@ -1,0 +1,31 @@
+
+development:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: sample
+  pool: 5
+  username: root
+  password: ardlithe
+  socket: /var/run/mysqld/mysqld.sock
+
+
+test:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: github_test
+  pool: 5
+  username: root
+  password:
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: github_production
+  pool: 5
+  username: root
+  password: 
+  socket: /var/run/mysqld/mysqld.sock

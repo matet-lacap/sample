@@ -1,0 +1,47 @@
+<h1><CENTER>ITC Github</CENTER></h1>
+</br>
+
+<CENTER>
+
+  <% form_tag(:action =>'pull_codes') do %>
+
+  <table border="1">
+  
+      <tr>
+        <td><label align="justified">URL:</label></td>
+        <td><%= text_field_tag "url" %></td>
+      </tr>
+
+      <tr>
+        <td><label align="justified">IP:</label></td>
+        <td><%= text_field_tag "ip" %></td>
+      </tr>
+
+      <tr>
+        <td><label align="justified">Username:</label></td>
+        <td><%= text_field_tag "username" %></td>
+      </tr>
+
+      <tr>
+        <td><label align="justified">Password:</label></td>
+        <td><%= text_field_tag "password" %></td>
+      </tr>
+
+      <tr>
+        <td><label align="justified">Directory:</label></td>
+        <td><%= text_field_tag "directory" %></td>
+      </tr>
+
+    </table>
+
+
+</br>
+</br>
+
+<%= submit_tag "Submit" %>
+<% end %>
+
+
+</CENTER>
+
+
